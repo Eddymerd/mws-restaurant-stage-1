@@ -41,4 +41,15 @@ self.addEventListener('activate', function(e) {
 
 self.addEventListener('fetch', function(e) {
   console.log("serviceWorker fetching");
+
+  e.respondWith(
+    caches.match(e.request).then(function(response) {
+      if(response){
+        console.log('cached asset returned');
+        return response;
+      }
+      console.log('fetched new asset');
+      return fetch (e.request);
+    })
+  )
 });
