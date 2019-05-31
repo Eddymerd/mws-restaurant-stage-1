@@ -1,0 +1,20 @@
+{
+  "name": "packageiguess",
+  "version": "1.0.0",
+  "description": "test gulp file",
+  "main": "index.js",
+  "scripts": {
+    "test": "firsttest"
+  },
+  "keywords": [
+    "gulptest"
+  ],
+  "author": "ediaz",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "gulp-sass": "^4.0.2"
+  }
+}

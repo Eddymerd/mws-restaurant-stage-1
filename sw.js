@@ -7,6 +7,7 @@ var cacheContent = [
     '/js/main.js',
     '/js/restaurant_info.js',
     'js/register_sw.js',
+    'data/restaurants.json'
 ]
 
 self.addEventListener('install', function(e) {
