@@ -151,7 +151,6 @@ export default class DBHelper {
    * Restaurant image URL.
    */
   static imageUrlForRestaurant(restaurant) {
-    console.log(`this restaurant is ${restaurant.name}`);
     return (`/img/${restaurant.photograph||restaurant.id}.jpg`);
   }
 

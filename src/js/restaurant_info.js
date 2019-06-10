@@ -20,7 +20,7 @@ const initMap = () => {
     if (error) { // Got an error!
       console.error(error);
     } else {
-      self.newMap = L.map('map', {
+      newMap = L.map('map', {
         center: [restaurant.latlng.lat, restaurant.latlng.lng],
         zoom: 16,
         scrollWheelZoom: false
@@ -35,7 +35,7 @@ const initMap = () => {
         id: 'mapbox.streets'
       }).addTo(newMap);
       fillBreadcrumb();
-      DBHelper.mapMarkerForRestaurant(self.restaurant, self.newMap);
+      DBHelper.mapMarkerForRestaurant(restaurant, newMap);
     }
   });
 }
@@ -131,7 +131,7 @@ const fillRestaurantHoursHTML = (operatingHours = self.restaurant.operating_hour
  */
 const fillReviewsHTML = (reviews = self.restaurant.reviews) => {
   const container = document.getElementById('reviews-container');
-  const title = document.createElement('h2');
+  const title = document.createElement('h3'); //changed to h3
   title.innerHTML = 'Reviews';
   container.appendChild(title);
 

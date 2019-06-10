@@ -1,11 +1,12 @@
 
-var cacheID ='cache-v1';
+var cacheID ='cache-v2';
 var cacheContent = [
     '/', // index.html
     '/restaurant.html',
     '/css/styles.css',
     '/js/main.js',
     '/js/restaurant_info.js',
+    '/manifest.json'
 ]
 
 
